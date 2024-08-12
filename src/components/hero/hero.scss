@@ -1,0 +1,101 @@
+.hero {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+  
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1266px;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-bottom : 120px;
+}
+
+.text-container {
+  flex: 1;
+  max-width: 600px;
+  margin-right: 20px;
+  display : grid;
+  justify-content: center;
+  align-items : center;
+}
+
+.text-container h2 {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.text-container p {
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;  
+}
+
+.buttons button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #555;
+}
+
+.image-container {
+  flex: 1;
+  max-width: 500px;
+}
+
+.image-container img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;  
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);  
+}
+
+.slidingTextContainer {
+  position: absolute;
+  font-size : 40vh;
+  bottom: -120px;
+  white-space : nowrap;
+  color : #ffffff09;
+  bottom: 0;
+  width: 50%;
+  font-weight: bold;
+
+}
+
+
+@media (max-width: 768px) {
+  .hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-container {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}

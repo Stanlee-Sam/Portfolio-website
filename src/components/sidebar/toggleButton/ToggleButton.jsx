@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 const ToggleButton = ({ setOpen }) => {
   return (
-    <button onClick={() => setOpen((prev) => !prev)}>
+    <button className = "toggle-button" onClick={() => setOpen((prev) => !prev)}>
       <svg width="23" height="23" viewBox="0 0 23 23">
         <motion.path
           strokeWidth="3"
