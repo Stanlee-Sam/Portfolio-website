@@ -1,0 +1,78 @@
+.contact {
+    height: 100%;
+    max-width: 1366px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    gap: 50px;
+    padding: 50px 20px; 
+    box-sizing: border-box;
+}
+
+.contact .textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start;
+    gap: 40px;
+    min-height: 550px; 
+    margin-left: 50px;
+}
+
+.contact .textContainer h1 {
+    font-size: 36px;
+    line-height: 44px;
+    align-self: center;
+}
+
+.contact .textContainer .item h2 {
+    font-size: 24px;
+    align-self: center;
+
+}
+
+.contact .textContainer span {
+    font-weight: 300;
+    align-self: center;
+
+}
+
+.contact .formContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    gap: 20px;
+    min-height: 300px; 
+}
+
+.contact .formContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact .formContainer form input,
+textarea {
+    padding: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+}
+
+.contact .formContainer form button {
+    padding: 20px;
+    border: none;
+    background-color: orange;
+    cursor: pointer;
+    font-weight: 500;
+    color: white; 
+}
+
+.contact .formContainer form textarea {
+    resize: none; 
+    height: 150px; 
+}
