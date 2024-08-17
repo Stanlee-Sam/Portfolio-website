@@ -43,3 +43,57 @@
     z-index: 1;
 
 }
+
+@media (max-width: 1536px) {
+}
+
+/* xl */
+@media (max-width: 1280px) {
+}
+
+/* lg */
+@media (max-width: 1024px) {
+}
+
+/* md */
+@media (max-width: 768px) {
+    .parallax h1{
+        font-size: 80px;
+    
+    }
+    .planets {
+        // background-position: unset;
+        // position: relative;
+        margin-bottom: 100px;
+
+        
+    }
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .parallax h1{
+        font-size: 60px;
+    
+    }
+    .mountains{
+        background-size: auto;
+    }
+    .planets {
+        background-position: inherit;
+    }
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .parallax h1{
+        font-size: 40px;
+    
+    }
+    .planets{
+        background-position: bottom ;
+        // margin-right: 800px;
+        
+        height: 50%;
+    }
+}

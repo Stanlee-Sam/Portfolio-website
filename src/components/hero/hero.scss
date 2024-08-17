@@ -14,7 +14,7 @@
   max-width: 1266px;
   width: 100%;
   flex-wrap: wrap;
-  padding-bottom : 120px;
+  // padding-bottom : 120px;
 }
 
 .text-container {
@@ -84,7 +84,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1376px) {
   .hero-wrapper {
     flex-direction: column;
     text-align: center;
@@ -98,4 +98,47 @@
   .buttons {
     justify-content: center;
   }
+}
+.slidingTextContainer {
+  font-size: 20vh;
+}
+
+
+/* xl */
+@media (max-width: 1280px) {
+
+  
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  
+}
+
+/* md */
+@media (max-width: 768px) {
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .slidingTextContainer {
+    font-size: 15vh;
+  }
+  
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .image-container img {
+    width: 200px;
+    height: 200px;
+  }
+  .text-container p {
+    font-size: 1.5rem;
+  }
+  .slidingTextContainer {
+    font-size: 5vh;
+  }
+  
+  
 }

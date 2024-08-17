@@ -68,12 +68,14 @@
 .textContainer h2 {
     font-size: 56px; 
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .textContainer p {
     color: gray;
     font-size: 20px;
     line-height: 1.5; 
+    text-align: center;
 }
 
 .textContainer button {
@@ -89,4 +91,85 @@
 
 .textContainer button:hover {
     background-color: darkorange; 
+}
+
+
+
+
+@media (max-width: 1536px) {
+}
+
+/* xl */
+@media (max-width: 1280px) {
+}
+
+/* lg */
+@media (max-width: 1024px) {
+}
+
+/* md */
+@media (max-width: 768px) {
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .portfolio-wrapper {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .portfolio-container .portfolio-wrapper .imageContainer img {
+        width: 500px;
+        height: 300px;
+    }
+    .portfolio .progress h1{
+        font-size: 60px;
+        padding-top: 40px;
+    }
+    .portfolio-container .portfolio-wrapper.textContainer h2 {
+        font-size: 38px;
+        text-align: center;
+    }
+    .portfolio-wrapper .textContainer p {
+        text-align: center;
+}
+.portfolio-wrapper .textContainer h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .portfolio-container .portfolio-wrapper .imageContainer img {
+        width: 350px;
+        height: 200px;
+    }
+    .portfolio .progress h1{
+        font-size: 40px;
+        padding-top: 40px;
+    }
+    
+}
+@media (max-width: 370px) {
+    .portfolio-container .portfolio-wrapper .imageContainer img {
+        width: 350px;
+        height: 200px;
+    }
+    .portfolio .progress h1{
+        font-size: 40px;
+        padding-top: 40px;
+    }
+    .portfolio-wrapper .textContainer p {
+        text-align: center;
+        font-size: 18px;
+}
+.portfolio-wrapper .textContainer h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+    
 }

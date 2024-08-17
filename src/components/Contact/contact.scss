@@ -1,51 +1,41 @@
 .contact {
-    height: 100%;
     max-width: 1366px;
     margin: auto;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
-    gap: 50px;
-    padding: 50px 20px; 
+    justify-content: space-between;
+    gap: 10px;
+    padding: 50px 20px;
     box-sizing: border-box;
+    flex-wrap: wrap; 
+    padding-top: 90px;
+}
+
+.contact .textContainer,
+.contact .formContainer {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contact .textContainer {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: flex-start;
-    gap: 40px;
-    min-height: 550px; 
-    margin-left: 50px;
+    gap: 60px;
+    text-align: left; 
 }
 
 .contact .textContainer h1 {
     font-size: 36px;
     line-height: 44px;
-    align-self: center;
 }
 
 .contact .textContainer .item h2 {
     font-size: 24px;
-    align-self: center;
-
 }
 
 .contact .textContainer span {
     font-weight: 300;
-    align-self: center;
-
-}
-
-.contact .formContainer {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    gap: 20px;
-    min-height: 300px; 
 }
 
 .contact .formContainer form {
@@ -55,7 +45,7 @@
 }
 
 .contact .formContainer form input,
-textarea {
+.contact .formContainer form textarea {
     padding: 20px;
     background-color: transparent;
     border: 1px solid white;
@@ -69,10 +59,78 @@ textarea {
     background-color: orange;
     cursor: pointer;
     font-weight: 500;
-    color: white; 
+    color: white;
 }
 
 .contact .formContainer form textarea {
-    resize: none; 
-    height: 150px; 
+    resize: none;
+    height: 150px;
+}
+
+
+
+/* Large tablets and below */
+@media (max-width: 931px) {
+    .contact {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+    
+    } 
+    .contact .textContainer,
+    .contact .formContainer {
+        width: 100%;
+        max-width: 600px;
+        align-items: center;
+    }
+    .contact .textContainer h1 {
+        font-size: 28px;
+    }
+    .contact .textContainer .item h2 {
+        font-size: 20px;
+    }
+    .contact .textContainer {
+        gap: 30px;
+        text-align: left; 
+    }
+    
+}
+
+/* Small tablets and below */
+@media (max-width: 640px) {
+    .contact .textContainer h1 {
+        font-size: 26px;
+    }
+    .contact .textContainer .item h2 {
+        font-size: 18px;
+    }
+    .contact .textContainer span {
+        font-size: 14px;
+    }
+    .contact .formContainer form input,
+    .contact .formContainer form textarea {
+        padding: 15px;
+    }
+    .contact .formContainer form button {
+        padding: 15px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 475px) {
+    .contact {
+        padding: 20px 10px;
+    }
+    .contact .textContainer h1 {
+        font-size: 22px;
+    }
+    .contact .textContainer .item h2 {
+        font-size: 16px;
+    }
+    .contact .formContainer form input,
+    .contact .formContainer form textarea,
+    .contact .formContainer form button {
+        padding: 10px;
+    }
 }

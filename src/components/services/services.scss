@@ -12,18 +12,18 @@
 }
 .title img {
     width: 300px;
-    height: 100px;
+    height: 85px;
     border-radius: 50px;
     object-fit: cover;
 
 }
 
 .title h1 {
-    font-size: 66px;
+    font-size: 60px;
     font-weight: 90;
 }
 .title button {
-    height: 100px;
+    height: 85px;
     width: 300px;
     border-radius: 50px;
     background-color: orange;
@@ -33,16 +33,17 @@
 }
 
 .textContainer {
-    flex: 1;
+    flex: 1.5;
     align-self: flex-end;
     display: flex;
     align-items: center;
     gap: 20px;
+    padding-top: 20px;
 
 }
 .textContainer p {
     font-weight: 200;
-    font-size: 20px;
+    font-size: 18px;
     text-align: right;
 }
 .textContainer hr{
@@ -59,10 +60,11 @@
     
 }
 .listContainer {
-    flex: 2;
+    flex: 3.5;
     display: flex;
     max-width: 1366px;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 .listContainer .box{
@@ -78,4 +80,163 @@
     background-color: orange;
     border: none;
     cursor: pointer;
+}
+@media (max-width: 1536px) {
+}
+
+/* xl */
+@media (max-width: 1280px) {
+}
+
+/* lg */
+@media (max-width: 1024px) {
+    .textContainer hr{
+        width: 260px;
+    }
+
+}
+
+@media (max-width: 918px) {
+    .title h1 {
+        font-size: 40px;
+        font-weight: 90;
+    }
+    .title button {
+        height: 55px;
+        width: 200px;
+        
+        font-size: 17px;
+    }
+    .title img {
+        height: 55px;
+        width: 200px;
+        border-radius: 50px;
+        object-fit: cover;
+    
+    }
+
+}
+
+/* md */
+@media (max-width: 768px) {
+    .textContainer hr{
+        width: 200px;
+    }
+
+    
+}
+
+/* sm */
+@media (max-width: 640px) {
+    .title button {
+        height: 55px;
+        width: 180px;
+        
+        font-size: 15px;
+    }
+    .title img {
+        height: 55px;
+        width: 200px;
+       
+    
+    }
+    .title h1 {
+        font-size: 20px;
+        font-weight: 90;
+    }
+    .listContainer .box{
+        padding: 20px;
+        
+    }
+    .listContainer .box button {
+        padding: 20px;
+        width: 50%;
+        height: 10px ;
+        align-self: center;
+        background-color: orange;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+      
+    }
+    .listContainer {
+        flex-wrap: wrap;
+        
+    }
+    .box h2{
+        text-align: center;
+        font-size: 18px;
+    }
+    .box p{
+        font-size: 13px;
+        text-align: center;
+    }
+    .textContainer hr{
+        width: 130px;
+    }
+    .services .textContainer p {
+        font-size: 15px;
+        text-align: center;
+    }
+    .titleContainer {
+       
+        padding-bottom: 20px;
+    }
+
+}
+
+/* xs */
+@media (max-width: 475px) {
+    .title button {
+        height: 30px;
+        width: 100px;
+        
+        font-size: 13px;
+    }
+    .title img {
+        height: 40px;
+        width: 160px;
+       
+    
+    }
+    .title h1 {
+        font-size: 16px;
+        font-weight: 90;
+    }
+    .listContainer .box{
+        padding: 8px;
+        
+    }
+    .listContainer .box button {
+        padding: 13px;
+        width: 30%;
+        
+      
+    }
+    
+    .box h2{
+        text-align: center;
+        font-size: 15px;
+    }
+    .box p{
+        font-size: 13px;
+        text-align: center;
+    }
+    .services .textContainer{
+        padding-top: 50px;
+    }
+    .textContainer hr{
+        width: 130px;
+    }
+    .services .textContainer p {
+        font-size: 15px;
+        text-align: center;
+    }
+    .titleContainer {
+       
+        padding-bottom: 20px;
+        padding-left: 10px;
+    }
+
 }
